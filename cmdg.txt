@@ -1,0 +1,12 @@
+gcloud init
+gcloud auth login
+gcloud version
+gcloud components update
+gcloud config list
+gcloud config set project [PROJECT_ID]
+gcloud projects list
+gcloud info
+gcloud compute instances list
+gsutil ls
+gcloud help
+gcloud cheat-sheet
