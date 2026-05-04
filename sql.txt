@@ -1,0 +1,52 @@
+SELECT *
+FROM `bigquery-public-data.usa_names.usa_1910_2013`
+LIMIT 10;
+
+SELECT name, year, gender, number
+FROM `bigquery-public-data.usa_names.usa_1910_2013`
+LIMIT 10;
+
+SELECT name, year, number
+FROM `bigquery-public-data.usa_names.usa_1910_2013`
+WHERE gender = 'F'
+LIMIT 10;
+
+SELECT name, SUM(number) AS total_count
+FROM `bigquery-public-data.usa_names.usa_1910_2013`
+GROUP BY name
+ORDER BY total_count DESC
+LIMIT 10;
+
+SELECT name, number
+FROM `bigquery-public-data.usa_names.usa_1910_2013`
+ORDER BY number DESC
+LIMIT 10;
+
+SELECT name, SUM(number) AS total
+FROM `bigquery-public-data.usa_names.usa_1910_2013`
+GROUP BY name
+ORDER BY total DESC
+LIMIT 5;
+
+SELECT name, SUM(number) AS total
+FROM `bigquery-public-data.usa_names.usa_1910_2013`
+WHERE gender = 'F'
+GROUP BY name
+ORDER BY total DESC
+LIMIT 5;
+
+
+SELECT year, SUM(number) AS total_births
+FROM `bigquery-public-data.usa_names.usa_1910_2013`
+GROUP BY year
+ORDER BY year;
+
+SELECT COUNT(DISTINCT name) AS unique_names
+FROM `bigquery-public-data.usa_names.usa_1910_2013`;
+
+SELECT COUNT(*) AS total_records
+FROM `bigquery-public-data.usa_names.usa_1910_2013`;
+
+SELECT *
+FROM `bigquery-public-data.usa_names.usa_1910_2013`
+WHERE year BETWEEN 2000 AND 2010;
