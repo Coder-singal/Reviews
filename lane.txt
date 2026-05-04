@@ -1,0 +1,146 @@
+# Navigation & Files
+
+ls
+ls -lh
+ls -R
+pwd
+cd folder
+cd ~
+cd /
+cd -
+
+# File Viewing
+
+cat file.txt
+less file.txt
+more file.txt
+head file.txt
+head -n 20 file.txt
+tail file.txt
+tail -f logfile.log
+
+# File Management
+
+cp file1 file2
+cp -r dir1 dir2
+mv file1 newname
+mv file dir/
+rm file.txt
+rm -rf dir
+stat file.txt
+file file.txt
+
+# Directory Management
+
+mkdir dir
+mkdir -p dir/subdir
+rmdir dir
+
+# Permissions
+
+chmod 755 file
+chmod +x script.sh
+chown user file
+chown user:group file
+
+# Search
+
+grep "text" file
+grep -r "text" .
+find . -name "*.txt"
+find / -type f -name file.txt
+
+# Compression & Archive
+
+tar -cvf archive.tar dir
+tar -xvf archive.tar
+tar -czvf archive.tar.gz dir
+tar -xzvf archive.tar.gz
+zip file.zip file.txt
+unzip file.zip
+
+# Disk & Storage
+
+df -h
+du -h
+du -sh folder
+lsblk
+mount
+umount /dev/sdX
+
+# System Info
+
+uname -a
+hostname
+uptime
+whoami
+who
+id
+date
+cal
+
+# Process Management
+
+top
+htop
+ps aux
+kill PID
+kill -9 PID
+pkill process_name
+bg
+fg
+jobs
+
+# Networking
+
+ping google.com
+curl https://example.com
+wget https://example.com/file
+ifconfig
+ip a
+netstat -tuln
+ss -tuln
+
+# Package Management (Debian/Ubuntu)
+
+sudo apt update
+sudo apt upgrade
+sudo apt install package
+sudo apt remove package
+sudo apt autoremove
+
+# Users & Groups
+
+adduser username
+deluser username
+passwd username
+groupadd groupname
+groups username
+
+# Environment & Variables
+
+echo $HOME
+echo $PATH
+export VAR=value
+env
+
+# Redirection & Pipes
+
+command > file.txt
+command >> file.txt
+command < file.txt
+command1 | command2
+
+# Useful Shortcuts
+
+history
+clear
+alias ll="ls -la"
+unalias ll
+exit
+
+# Help
+
+man ls
+ls --help
+info ls
